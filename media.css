@@ -1,0 +1,7 @@
+@media(max-width: 925px){
+    .box-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

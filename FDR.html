@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fire Detection Robot</title>
+    <link rel="shortcut icon" type="images/x-icon" href="images.jpg">
+    <link rel="stylesheet" href="media.css">
+    
+    <style>
+        header {
+            background-color: #ffffff;
+            text-align:center;
+        }
+        body {
+            background-color: rgba(148, 155, 192, 0.808);
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+        .box-row {
+            display: flex;
+            justify-content: space-around;
+        }
+        .box1 {
+            text-align: center;
+            display:table-cell;
+	        box-sizing: border-box;
+            border: 20px solid rgb(116, 6, 241);
+            margin: 50px;
+            padding: 50px;
+            width: 390px;
+            height: 457px;
+        }
+        .box2 {
+            text-align: center;
+            display:table-cell;
+	        box-sizing: border-box;
+            border: 20px solid rgb(116, 6, 241);
+            margin: 50px;
+            padding: 50px;
+            width: 390px;
+            height: 457px;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <header>
+        <h1 style="color:rgb(20, 14, 7);">Fire Detection Robot 🤖</h1>
+        <iframe src="https://free.timeanddate.com/clock/i7spz91u/n4501/tleg/fn7/fs20/tct/pct/ftb/th2" frameborder="0" width="129" height="30" allowtransparency="true"></iframe>
+    </header>
+    
+            <div class="box-row">
+                <div class="box1">
+                    <h1 style="color:rgb(0, 255, 0);">Safe</h1>
+                    <img src="shield-logo.png" style="width:250px;height:225px;">
+                </div>
+                <div class="box2">
+                    <h1 style="color:rgb(255, 196, 0);">Fire</h1>
+                    <img src="fire-logo.png" style="width:250px;height:225px;">
+                </div>
+            </div>
+
+        <footer>
+            <p>© 2021 EEFFMNNNS, Inc.</p>
+        </footer>
+        
+        <script>
+            var element1 = document.getElementById("box1");
+            var element2 = document.getElementById("box2");
+            var fire=true;
+            if(fire=true){
+                element1.style.backgroundColor = "white";
+                element2.style.backgroundColor = "red";
+            }else{
+                element1.style.backgroundColor = "green";
+                element2.style.backgroundColor = "white";
+            }
+        </script>
+
+</body>
+
+</html>
